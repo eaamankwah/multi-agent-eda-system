@@ -570,6 +570,10 @@ multi-agent-eda-system/
     └── test_relationship.py  
     └── test_storytelling.py                                                       
 ```
+[Project Code base](Multi_Agent_Exploratory_Data_Analysis_System.py)
+
+[Project Notebook](Multi_Agent_Exploratory_Data_Analysis_System.ipynb)
+
 
 # 🧪 Testing
 ![Multi-Agent System Test Coverage](images/multi_agent_system_test_coverage.jpeg)
