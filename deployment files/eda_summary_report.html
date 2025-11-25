@@ -1,0 +1,221 @@
+
+        <html>
+        <head>
+            <title>EDA Report</title>
+            <style>
+                body { font-family: Arial, sans-serif; margin: 40px; background-color: #f5f5f5; }
+                h1 { color: #2c3e50; border-bottom: 3px solid #3498db; padding-bottom: 10px; }
+                h2 { color: #34495e; border-bottom: 2px solid #3498db; margin-top: 30px; }
+                .metric { background: #ffffff; padding: 20px; margin: 10px 0; border-radius: 8px; 
+                          box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+                table { border-collapse: collapse; width: 100%; margin-top: 15px; }
+                th, td { border: 1px solid #ddd; padding: 12px; text-align: left; }
+                th { background-color: #3498db; color: white; font-weight: bold; }
+                tr:nth-child(even) { background-color: #f2f2f2; }
+                .summary-box { background: #e8f4f8; padding: 15px; border-left: 4px solid #3498db; 
+                               margin: 20px 0; }
+            </style>
+        </head>
+        <body>
+            <h1>🔍 Multi-Agent EDA Report</h1>
+            
+            <div class="summary-box">
+                <strong>Generated:</strong> 2025-11-24 07:58:53
+            </div>
+            
+            <div class="metric">
+                <h2>📊 Dataset Overview</h2>
+                <p><strong>Total Rows:</strong> 1,000</p>
+                <p><strong>Total Columns:</strong> 9</p>
+                <p><strong>Numerical Columns:</strong> 6</p>
+                <p><strong>Categorical Columns:</strong> 3</p>
+                <p><strong>Memory Usage:</strong> 0.20 MB</p>
+            </div>
+            
+            <div class="metric">
+                <h2>📈 Summary Statistics</h2>
+                <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>customer_id</th>
+      <th>age</th>
+      <th>income</th>
+      <th>purchase_amount</th>
+      <th>num_purchases</th>
+      <th>satisfaction_score</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>1000.000000</td>
+      <td>1000.000000</td>
+      <td>950.000000</td>
+      <td>1000.000000</td>
+      <td>1000.000000</td>
+      <td>970.000000</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>500.500000</td>
+      <td>49.857000</td>
+      <td>51075.945336</td>
+      <td>101.919085</td>
+      <td>4.987000</td>
+      <td>2.956817</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>288.819436</td>
+      <td>18.114267</td>
+      <td>21490.316295</td>
+      <td>102.376625</td>
+      <td>2.261403</td>
+      <td>1.133186</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>1.000000</td>
+      <td>18.000000</td>
+      <td>-21364.105987</td>
+      <td>0.018842</td>
+      <td>0.000000</td>
+      <td>1.007728</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>250.750000</td>
+      <td>35.000000</td>
+      <td>37464.150957</td>
+      <td>27.726406</td>
+      <td>3.000000</td>
+      <td>1.994222</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>500.500000</td>
+      <td>50.000000</td>
+      <td>51766.517555</td>
+      <td>73.732245</td>
+      <td>5.000000</td>
+      <td>2.973215</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>750.250000</td>
+      <td>66.000000</td>
+      <td>65430.356011</td>
+      <td>140.338423</td>
+      <td>6.000000</td>
+      <td>3.892926</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>1000.000000</td>
+      <td>79.000000</td>
+      <td>113488.842743</td>
+      <td>815.883421</td>
+      <td>15.000000</td>
+      <td>4.997985</td>
+    </tr>
+  </tbody>
+</table>
+            </div>
+            
+            <div class="metric">
+                <h2>🎯 Data Quality Metrics</h2>
+                <p><strong>Missing Values:</strong> 80</p>
+                <p><strong>Duplicate Rows:</strong> 0</p>
+                <p><strong>Columns with Missing Data:</strong> 2</p>
+            </div>
+            
+            <div class="metric">
+                <h2>🔬 Analysis Results</h2>
+                <pre style="background: #f8f8f8; padding: 15px; border-radius: 5px; overflow-x: auto;">
+{
+  "quality": {
+    "assess_data_quality": {
+      "result": {
+        "shape": [
+          1000,
+          9
+        ],
+        "columns": [
+          "customer_id",
+          "age",
+          "income",
+          "purchase_amount",
+          "num_purchases",
+          "satisfaction_score",
+          "region",
+          "customer_type",
+          "product_category"
+        ],
+        "dtypes": {
+          "customer_id": "int64",
+          "age": "int64",
+          "income": "float64",
+          "purchase_amount": "float64",
+          "num_purchases": "int64",
+          "satisfaction_score": "float64",
+          "region": "object",
+          "customer_type": "object",
+          "product_category": "object"
+        },
+        "missing_values": {
+          "customer_id": 0,
+          "age": 0,
+          "income": 50,
+          "purchase_amount": 0,
+          "num_purchases": 0,
+          "satisfaction_score": 30,
+          "region": 0,
+          "customer_type": 0,
+          "product_category": 0
+        },
+        "missing_percentage": {
+          "customer_id": 0.0,
+          "age": 0.0,
+          "income": 5.0,
+          "purchase_amount": 0.0,
+          "num_purchases": 0.0,
+          "satisfaction_score": 3.0,
+          "region": 0.0,
+          "customer_type": 0.0,
+          "product_category": 0.0
+        },
+        "duplicates": "0",
+        "memory_usage": 0.20168495178222656
+      }
+    },
+    "handle_duplicates": {
+      "result": "DataFrame: (1000, 9)"
+    },
+    "handle_missing_values": {
+      "result": "DataFrame: (1000, 9)"
+    },
+    "identify_data_types": {
+      "result": {
+        "numerical": [
+          "customer_id",
+          "age",
+          "income",
+          "purchase_amount",
+          "num_purchases",
+          "satisfaction_score"
+        ],
+        "categorical": [
+          "region",
+          "customer_type",
+          "product_category"
+        ],
+        "datetime": [],
+        "all_dtypes": {
+          "customer_id": "int64",
+     
+                </pre>
+            </div>
+        </body>
+        </html>
+        

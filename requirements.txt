@@ -1,0 +1,10 @@
+pandas>=1.5
+numpy
+scikit-learn
+fastapi
+uvicorn
+matplotlib
+seaborn
+jinja2
+pyyaml
+python-multipart
