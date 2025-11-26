@@ -21,9 +21,10 @@ A fully autonomous multi-agent architecture for end-to-end exploratory data anal
 11. Installation
 12. API Usage
 13. Repository Structure
-14. Testing
-15. Extensibility
-16. Citations
+14. Project Links
+15. Testing
+16. Extensibility
+17. Citations
 
 # 🧠 Introduction
 This repository provides a complete implementation of a multi-agent system for Exploratory Data Analysis (EDA). The system enables automated:
@@ -570,10 +571,16 @@ multi-agent-eda-system/
     └── test_relationship.py  
     └── test_storytelling.py                                                       
 ```
-[Project Code base](Multi_Agent_Exploratory_Data_Analysis_System.py)
+
+# 🔗 Project Links
+
+[Project Codebase](Multi_Agent_Exploratory_Data_Analysis_System.py)
 
 [Project Notebook](Multi_Agent_Exploratory_Data_Analysis_System.ipynb)
 
+[Project Slide Deck](project_slide_desk.pdf)
+
+[Project Video Presentation](https://drive.google.com/file/d/1T4-KtzuHY5VF64cEonyH1o37KPAPxFwi/view?usp=sharing)
 
 # 🧪 Testing
 ![Multi-Agent System Test Coverage](images/multi_agent_system_test_coverage.jpeg)
